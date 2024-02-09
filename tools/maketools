@@ -7,11 +7,11 @@
 #bin_nek_tools=`cd ../bin && pwd`
 
 # Fortran compiler
-#FC="gfortran"
-#FFLAGS=""
+FC="mpif77"
+FFLAGS="-std=legacy"
 
 # C compiler
-#CC="gcc"
+CC="mpicc"
 #CFLAGS=""
 
 # linking flags
