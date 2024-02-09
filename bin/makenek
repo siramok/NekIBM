@@ -3,7 +3,7 @@
 # Nek5000 config file
 #-------------------------------------------------------------------------------
 
-# source path 
+# source path (assumes that you have already executed 'source setup-env.sh')
 SOURCE_ROOT="$NEK5000_HOME" 
 
 # Fortran/C compiler
@@ -18,7 +18,7 @@ PPLIST="LPM"
 #-------------------------------------------------------------------------------
 
 # optional compiler flags
-#FFLAGS=""
+FFLAGS="-std=legacy -mcmodel=large"
 #CFLAGS=""
 
 # optional linking flags
